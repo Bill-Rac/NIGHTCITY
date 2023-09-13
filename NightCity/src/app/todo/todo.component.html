@@ -1,0 +1,14 @@
+<div class="container">
+  <div id="checklist">
+    <div *ngFor="let todo of todos">
+      <input
+        [id]="'todo' + todo.id"
+        type="checkbox"
+        name="todo"
+        [value]="todo.id"
+        [checked]="todo.completed"
+      />
+      <label [for]="'todo' + todo.id">{{ todo.title }}</label>
+    </div>
+  </div>
+</div>

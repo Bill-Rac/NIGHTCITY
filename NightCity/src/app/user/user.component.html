@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="card" *ngFor="let user of users">
+    <div class="bg uwu"></div>
+    <div class="bg"></div>
+    <div class="content">
+      <div class="img">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="user-info">
+        <p><strong>ID:</strong> {{ user.id }}</p>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Address:</strong></p>
+        <ul>
+          <li><strong>Street:</strong> {{ user.address.street }}</li>
+          <li><strong>Suite:</strong> {{ user.address.suite }}</li>
+          <li><strong>City:</strong> {{ user.address.city }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

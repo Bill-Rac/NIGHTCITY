@@ -1,0 +1,125 @@
+.card {
+  position: relative;
+  width: 190px;
+  color: white;
+  min-height: 320px;
+  background: #171219;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.container {
+  z-index: -2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  inset: -4px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.uwu {
+  filter: blur(8px);
+  transition: filter 0.3s;
+}
+
+.bg::before {
+  content: '';
+  position: absolute;
+  aspect-ratio: 1/1;
+  top: 50%;
+  left: 50%;
+  min-width: 150%;
+  min-height: 150%;
+  background-color: #310D20;
+  /* Cambia el fondo a un solo color */
+  transform-origin: 0% 0%;
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+
+@keyframes speeen {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+.content {
+  position: relative;
+  padding: 14px 16px;
+}
+
+.img {
+  height: 5em;
+  width: 5em;
+  margin: auto;
+  background-color: #fff3;
+  border-radius: 1em;
+}
+
+.img svg {
+  height: 100%;
+  fill: white;
+}
+
+.content div {
+  text-align: center;
+}
+
+.h1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.p {
+  font-size: 0.75em;
+}
+
+.user-info {
+  text-align: center;
+  margin-top: auto;
+  padding: 16px;
+  border-radius: 0 0 14px 14px;
+}
+
+.p p {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  background-color: #0003;
+  border-radius: 1em;
+}
+
+.user-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-info li {
+  text-align: left;
+  margin-left: 0;
+}
