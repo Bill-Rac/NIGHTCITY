@@ -7,32 +7,6 @@ html {
 }
 
 /* Navbar  CSS*/
-.contenedor {
-    position: relative;
-    display: inline-block;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
-    margin: 2rem;
-}
-
-.texto-principal {
-    position: relative;
-    z-index: 2;
-    color: #E7EA1F;
-    font-weight: bold;
-}
-
-.texto-sombra {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    z-index: 1;
-    color: #40A0B5;
-    pointer-events: none;
-    font-weight: bold;
-}
-
-/* Inicio de CSS de la targeta */
 .card {
     position: relative;
     width: 190px;
@@ -53,6 +27,11 @@ html {
 }
 
 .container {
+    z-index: -2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -153,7 +132,6 @@ html {
     text-align: left;
     margin-left: 0;
 }
-
 
 /* REDICRECCIONADORES MENU */
 .menu {

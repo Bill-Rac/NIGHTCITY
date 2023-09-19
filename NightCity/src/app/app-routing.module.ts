@@ -5,6 +5,7 @@ import { PostComponent } from './post/post.component';
 import { CommentsComponent } from './comments/comments.component';
 import { TodoComponent } from './todo/todo.component';
 import { UserComponent } from './user/user.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'users',
     component: UserComponent
+  },
+  {
+    path: 'products',
+    component: ProductsComponent
   },
 
 ];

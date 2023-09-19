@@ -9,6 +9,7 @@ import { PostComponent } from './post/post.component';
 import { CommentsComponent } from './comments/comments.component';
 import { TodoComponent } from './todo/todo.component';
 import { UserComponent } from './user/user.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserComponent } from './user/user.component';
     PostComponent,
     CommentsComponent,
     TodoComponent,
-    UserComponent
+    UserComponent,
+    ProductsComponent
   ],
   imports: [
     HttpClientModule,

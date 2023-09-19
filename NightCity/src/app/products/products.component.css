@@ -1,0 +1,64 @@
+.card {
+  width: 17em;
+  background: #171219;
+  border: 3px solid #310D20;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.containerCard {
+  place-items: center;
+  z-index: -2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card .img {
+  width: 100%;
+  padding-bottom: 15%;
+  /* Establecer una relación de aspecto (proporción de 4:3) */
+  border-radius: 15px 15px 0 0;
+  /* Redondear las esquinas superiores */
+  overflow: hidden;
+}
+
+.card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.card .content {
+  padding: 1em;
+  flex-grow: 1;
+  /* Hacer que el contenido ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1em;
+}

@@ -1,0 +1,13 @@
+<div class="containerCard">
+  <!-- Utiliza *ngFor para iterar sobre los productos en this.comments -->
+  <div class="card" *ngFor="let product of items">
+    <div class="img">
+      <img [src]="product.image" alt="{{ product.title }}" />
+    </div>
+    <span>{{ product.title }}</span>
+    <p class="info">{{ product.category }}</p>
+    <!-- Muestra la categoría del producto -->
+    <p class="info">{{ product.description }}</p>
+    <!-- Muestra la descripción del producto -->
+  </div>
+</div>
